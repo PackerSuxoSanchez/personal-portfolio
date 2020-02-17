@@ -82,7 +82,7 @@ footer {
     color: #fff;
 }
 
-@media screen and (width: 600px;) {
+@media screen and (width: 600px) {
     body {
         background-color: red;
     }
