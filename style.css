@@ -1,3 +1,4 @@
+/*One CSS to Rule Them All*/
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     font-weight: 400;
 }
 
+/*Universial Attributes for Anchor Elements*/
 a {
     text-decoration: none;
     transition: .75s;
@@ -31,6 +33,7 @@ a:hover {
     color: #4A6880;
 }
 
+/*Navigation Menu*/
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -58,6 +61,7 @@ a:hover {
     background-color: #fff;
 }
 
+/*Welcome Section*/
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -68,6 +72,7 @@ a:hover {
     background-color: #398CCC;
 }
 
+/*Projects Section*/
 #projects {
     background-color: #245880;
 }
@@ -97,6 +102,7 @@ h1 {
 
 }
 
+/*Contact Section*/
 #contact {
     display: flex;
     justify-content: space-evenly;
@@ -114,6 +120,7 @@ h1 {
     background-color: #398CCC;
 }
 
+/*Footer*/
 footer {
     display: flex;
     justify-content: center;
@@ -123,6 +130,7 @@ footer {
     color: #fff;
 }
 
+/*Random @media to complete codepen tests*/
 @media screen and (width: 600px) {
     body {
         background-color: red;
