@@ -22,11 +22,11 @@ a {
 }
 
 a:link {
-    color: black;
+    color: #398CCC
 }
 
 a:visited {
-    color: black;
+    color: #398CCC;
 }
 
 a:hover {
@@ -86,10 +86,6 @@ a:hover {
     padding: 1rem;
 }
 
-.project-tile a:hover {
-    background-color: #fff;
-}
-
 figcaption {
     text-align: center;
     color: #fff;
@@ -99,7 +95,6 @@ h1 {
     padding: 2rem;
     color: #fff;
     text-align: center;
-
 }
 
 /*Contact Section*/
