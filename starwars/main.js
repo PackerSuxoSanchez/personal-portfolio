@@ -1,15 +1,31 @@
 import { films } from '../data/films.js'
-
-console.log('Hello there!  Welcome to my page!')
-
-console.log(document.querySelector('.greeting'))
+import { people } from '../data/people.js'
+import { starships } from '../data/starships.js'
 
 const greetingDiv = document.querySelector('.greeting')
 
-greetingDiv.textContent = 'I just inserted text into a DOM element using my new JavaScript Skills!'
+const castList = document.createElement('ul')
 
-console.log(greetingDiv.textContent)
+let counter = 1
 
-console.log(films)
+people.forEach(person => {
+    let listItem = document.createElement('li')
+    listItem.textContent = person.name
+    castList.appendChild(listItem)
 
-greetingDiv.textContent = films[0].opening_crawl
+let anchorWrap = document.createElement('a')
+anchorWrap.href = '#'
+
+    let imageItem = document.createElement('img')
+    imageItem.src =  `https://starwars-visualguide.com/assets/img/characters/${counter}.jpg`
+    
+    // add some way to handle user clicks on the image
+    imageItem.addEventListener('click', () => {
+        console.log(event)
+    })
+    anchorWrap.appendChild(imageItem)
+    greetingDiv.appendChild(anchorWrap)
+    counter++
+})
+
+greetingDiv.appendChild(castList)
