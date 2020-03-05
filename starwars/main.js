@@ -9,20 +9,20 @@ const otherButton = document.querySelector('#otherButton')
 
 const otherCharacters = people.filter(person => {
     if (
-        person.gender === 'hermaphrodite'|| 
+        person.gender === 'hermaphrodite' || 
         person.gender === 'n/a' ||
         person.gender === 'none'
-      ) {
+    ) {
         return person
     }
 })
 
 maleButton.addEventListener('click', (event) => {
-    populateDOM(maleCharacters)
+    populateDOM(people.filter(person => person.gender === 'male'))
 })
 
 femaleButton.addEventListener('click', (event) => {
-    populateDOM(femaleCharacters)
+    populateDOM(people.filter(person => person.gender === 'female'))
 })
 
 otherButton.addEventListener('click', (event) => {
@@ -40,32 +40,30 @@ function getCharNumber(url) {
     return url.slice(start, end)
 }
 
-//getCharNumber("https://swapi.co/api/people/10/")
-
+//getCharNumber("https://swapi.co/api/people/1/")
 
 function populateDOM(characters) {
     characters.forEach(person => {
         // need to extract the number from the person.url property
-    let charNum = getCharNumber(person.url)
-    let anchorWrap = document.createElement('a')
-    anchorWrap.href = '#'
+        let charNum = getCharNumber(person.url)
+        let anchorWrap = document.createElement('a')
+        anchorWrap.href = '#'
 
-    let imageItem = document.createElement('img')
-    imageItem.src =  `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
+        let imageItem = document.createElement('img')
+        imageItem.src =  `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
 
-    imageItem.addEventListener('error', (event) => {
-        //console.log(`${event.type}: Loading image\n`)
-        //console.log(event)
-        imageItem.hidden = true
-        //imageItem.src = '../images/uvu-logo.jpg'
-    });
+        imageItem.addEventListener('error', (event) => {
+            //console.log(`${event.type}: Loading image\n`)
+            //console.log(event)
+            imageItem.hidden = true
+            //imageItem.src = '../images/uvu-logo.jpg'
+        })
     
-    // add some way to handle user clicks on the image
-    imageItem.addEventListener('click', () => {
-        console.log(event)
+        // add some way to handle user clicks on the image
+        imageItem.addEventListener('click', () => {
+            console.log(event)
+        })
+        anchorWrap.appendChild(imageItem)
+        greetingDiv.appendChild(anchorWrap)
     })
-    anchorWrap.appendChild(imageItem)
-    greetingDiv.appendChild(anchorWrap)
-    counter++
-})
 }
