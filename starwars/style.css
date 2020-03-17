@@ -3,7 +3,25 @@
 }
 
 body {
-    background-color: #dfdfdf;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition: .5s;
+    background-color: yellow;
+}
+
+a:active {
+    color: grey;
+}
+
+li {
+    list-style: none;
 }
 
 a > img {
@@ -11,9 +29,19 @@ a > img {
     margin: 4px;
 }
 
+h1 {
+    text-align: center;
+}
+
 button {
-    font-size: 2rem;
-    background-color: #ababab;
+    font-size: 1rem;
+    background-color: #51AEFE;
     border-radius: 10px;
-    padding: 8px;
+    padding: 8px 70px;
+    margin: 0px 20px;
+    color: white;
+}
+
+.character-buttons {
+    
 }
