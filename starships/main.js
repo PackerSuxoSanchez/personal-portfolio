@@ -8,7 +8,7 @@ const navList = document.querySelector('.navList')
 const shipView = document.querySelector('.main')
 
 const dialog = document.querySelector('.modal')
-const closeButton = document.query Selector('.modal-close')
+const closeButton = document.querySelector('.modal-close')
 const modalBackground = document.querySelector('.modal-background')
 
 closeButton.addEventListener('click', () => {
@@ -45,9 +45,9 @@ function populateShipView(shipData) {
     let shipNum = getLastNumber(shipData.url)
     let shipImage = document.createElement('img')
     shipImage.src =  `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
-    shipImage.addEventListener('error', (event) => {
+    shipImage.addEventListener('error', event => {
         shipImage.hidden = true
-        dialog.classList.toggle('is-active')
+        dialog.classList.toggle("is-active")
     })
     shipView.appendChild(shipImage)
 }
