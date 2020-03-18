@@ -24,8 +24,13 @@ a:active {
     color: grey;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
     list-style: none;
+    text-align: center;
 }
 
 h1 {
@@ -72,5 +77,4 @@ a > img {
 
 footer {
     text-align: center;
-
 }
