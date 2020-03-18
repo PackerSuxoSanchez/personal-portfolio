@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <title>Star Wars Project</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Return to Previous Page</a></li>
+                <li><a href="../index.html"><img src="/images/jedi-order-brands.svg" class="home-button"></a></li>
             </ul>
         </nav>
     </header>
@@ -19,7 +20,7 @@
         <div>
             <h1>Star Wars Characters</h1>
             <div class="character-buttons">
-                <p>Filter by...</p>
+                <p id="character-filter">Filter by:</p>
                 <button id="maleButton">Male</button>
                 <button id="femaleButton">Female</button>
                 <button id="otherButton">Other</button>
@@ -27,6 +28,9 @@
         </div>
     </main>
     <div class="gallery"></div>
+    <footer>
+        <p>&copy; Packer Suxo-Sanchez 2020</p>
+    </footer>
     <script src="main.js" type="module"></script>
 </body>
 </html>

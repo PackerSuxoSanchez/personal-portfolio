@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: white;
+    background-color: #C9C9C5;
+    font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -11,9 +12,12 @@ a {
     color: black;
 }
 
+.home-button {
+    height: 50px;
+}
+
 a:hover {
     transition: .5s;
-    background-color: yellow;
 }
 
 a:active {
@@ -24,24 +28,49 @@ li {
     list-style: none;
 }
 
-a > img {
-    height: 18rem;
-    margin: 4px;
-}
-
 h1 {
     text-align: center;
 }
 
 button {
     font-size: 1rem;
-    background-color: #51AEFE;
     border-radius: 10px;
     padding: 8px 70px;
-    margin: 0px 20px;
+    margin: 5px 20px 20px 20px;
     color: white;
 }
 
+#maleButton {
+    background-color: #51AEFE;
+}
+
+#femaleButton {
+    background-color: #FF6BE8;
+}
+
+#otherButton {
+    background-color: grey;
+}
+
+#character-filter {
+    text-align: center;
+}
+
 .character-buttons {
-    
+    text-align: center;
+}
+
+a > img {
+    height: 18rem;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+
 }
