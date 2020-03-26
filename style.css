@@ -86,6 +86,10 @@ a:hover {
     padding: 1rem;
 }
 
+figure.project-tile > img {
+    height: 10em;
+}
+
 figcaption {
     text-align: center;
     color: #fff;
