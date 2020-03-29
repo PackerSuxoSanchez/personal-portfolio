@@ -31,7 +31,7 @@ console.log(filterSenators('party', 'D'))
 console.log(filterSenators('party', 'ID')) */
 
 const senatorNames = senators.map(senator => {
-    let middle_name = senator.middle_name ? ` ${senator.middle_name} ` : ` `
+    let middleName = senator.middle_name ? ` ${senator.middle_name} ` : ` `
     return {
         id: senator.id,
         name: `${senator.first_name}${middleName}${senator.last_name}`,
