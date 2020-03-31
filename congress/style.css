@@ -1,4 +1,17 @@
+h1 {
+    text-align: center;
+}
+
 .senators {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
 }
