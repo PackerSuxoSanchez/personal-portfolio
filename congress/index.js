@@ -48,8 +48,7 @@ const missedVotes = getSimplifiedSenators(senators).reduce((acc, senator) => acc
 
 let loyalArray = []
 
-const mostLoyal = getSimplifiedSenators(senators).reduce((acc, senator) => acc.loyaltyPct > senator.loyaltyPct ? acc : senator) => {
-
+const mostLoyal = getSimplifiedSenators(republicans).reduce((acc, senator) => {
     if(senator.loyaltyPct === 100) {
         loyalArray.push(senator)
     }
@@ -58,4 +57,4 @@ const mostLoyal = getSimplifiedSenators(senators).reduce((acc, senator) => acc.l
 
 console.log(loyalArray)
 
-populateSenatorDiv(getSimplifiedSenators(republicans))
+populateSenatorDiv(getSimplifiedSenators(senators))
