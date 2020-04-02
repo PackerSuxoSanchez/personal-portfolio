@@ -3,19 +3,19 @@ import { senators }  from '../data/senators.js'
 const senatorDiv = document.querySelector('.senators')
 
 function getSimplifiedSenators(senatorArray) {
-    senators.map(senator => {
-    let middleName = senator.middle_name ? ` ${senator.middle_name} ` : ` `
-    return {
-        id: senator.id,
-        name: `${senator.first_name}${middleName}${senator.last_name}`,
-        imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`,
-        seniority: parseInt(senator.seniority, 10)
-    }
+    return senatorArray.map(senator => {
+        let middleName = senator.middle_name ? ` ${senator.middle_name} ` : ` `
+        return {
+            id: senator.id,
+            name: `${senator.first_name}${middleName}${senator.last_name}`,
+            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`,
+            seniority: parseInt(senator.seniority, 10)
+        }
     })
 }
 
 function populateSenatorDiv(simpleSenators) {
-
+        console.log(simpleSenators)
         simpleSenators.forEach(senator => {
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
