@@ -13,6 +13,20 @@ h1 {
     text-align: center;
 }
 
+#congress-home {
+    margin-left: 4rem;
+    height: 3rem;
+}
+
+#congress-home:hover {
+    background-color: #FF8178;
+    transition: 1s;
+}
+
+main {
+    margin: 2rem;
+}
+
 .senators {
     display: flex;
     flex-wrap: wrap;
@@ -30,5 +44,8 @@ figure {
 }
 
 footer {
+    background-color: #FF8178;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
