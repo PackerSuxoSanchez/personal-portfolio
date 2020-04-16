@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
     
 body {
     background-color: #fffefc;
@@ -27,10 +31,36 @@ main {
     margin: 2rem;
 }
 
-.senators {
+.senatorGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-republican {
+    color: red;
+}
+
+.fa-democrat {
+    color: blue;
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.progressDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: .75rem;
 }
 
 img {
