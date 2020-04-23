@@ -80,14 +80,26 @@ a:hover {
 #project-list {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
 }
 
 .project-tile {
     padding: 1rem;
 }
 
+.project-tile:hover {
+    background-color: white;
+    transition: .75s;
+}
+
+.project-tile:hover figcaption {
+    color: #245880;
+    transition: .75s;
+}
+
 figure.project-tile > img {
-    height: 10em;
+    height: 8rem;
 }
 
 figcaption {
