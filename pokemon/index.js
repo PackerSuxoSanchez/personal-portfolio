@@ -97,23 +97,23 @@ class Pokemon {
 }
 
 function addPokemon() {
-    let Thoremon = new Pokemon(190, 290, 'Thoremon',
+    let Packemon = new Pokemon(200, 290, 'Packemon',
     [
         { 
             ability: {
-                name: 'Thunder Belly'
+                name: 'Beard Growth'
             }
         },
         {
             ability: {
-                name:'Beard Power'
+                name:'Turtle Speed'
             }
         },
         {
             ability: {
-                name:'Rancid Stench'
+                name:'Does not talk about Fight Club'
             }
         }
     ])
-    populatePokeCard(Thoremon)
+    populatePokeCard(Packemon)
 }

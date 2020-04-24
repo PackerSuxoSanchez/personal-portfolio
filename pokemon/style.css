@@ -1,57 +1,111 @@
 body {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	background-color: #FFDE00;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#pokeButtons {
+	margin-bottom: 2rem;
+}
+
+#startButton {
+	color: white;
+	background-color: #3B4CCA;
+	padding: .5rem 7rem;
+	margin: 0 2rem;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+#startButton:hover {
+	color: #FFDE00;
+	background-color: #CC0000;
+	transition: .25s;
+}
+
+#newButton {
+	color: white;
+	background-color: #3B4CCA;
+	padding: .5rem 7rem;
+	margin: 0 2rem;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+#newButton:hover {
+	color: #FFDE00;
+	background-color: #CC0000;
+	transition: .25s;
 }
 
 .pokemonGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
  .scene {
-   width: 200px;
-   height: 260px;
-   border: 1px solid #CCC;
-   margin: 10px;
-   perspective: 600px;
-   border-radius: 30px;
+	width: 200px;
+	height: 260px;
+	border: 1px solid #CCC;
+	margin: 10px;
+	perspective: 600px;
+	border-radius: 30px;
  }
 
  .card {
-   width: 100%;
-   height: 100%;
-   transition: transform 1s;
-   transform-style: preserve-3d;
-   cursor: pointer;
-   position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
  }
 
  .card.is-flipped {
-   transform: rotateY(180deg);
+	transform: rotateY(180deg);
  }
 
  .card__face {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   color: white;
-   text-align: center;
-   font-weight: bold;
-   backface-visibility: hidden;
-   border-radius: 30px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	backface-visibility: hidden;
+	border-radius: 30px;
  }
 
  .card__face--front {
-   background: red;
+	background: #CC0000;
  }
 
  .card__face--back {
-   background: blue;
-   transform: rotateY(180deg);
+	background: #36454F; /*Charcoal*/
+	transform: rotateY(180deg);
+ }
+
+ img {
+	height: 10rem;
+	padding-top: 1rem;
+ }
+
+ p {
+	padding-top: 1rem;
+ }
+
+ ul{
+	margin-top: 2rem;
+	padding: 0;
+	list-style-type: none;
+ }
+
+ ul li {
+	margin-bottom: 1rem;
  }
