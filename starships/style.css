@@ -46,6 +46,7 @@ header {
     background-color: #FFE81F;
     width: 100%;
     list-style: none;
+    z-index: 1;
     /* border-bottom: 1px solid #FFE81F; maybe come back to this later */
 }
 
@@ -109,7 +110,7 @@ li {
 }
 
 /* ----- Images ----- */
-main > img {
+main img {
     height: 300px;
     border-radius: 10px;
 }
