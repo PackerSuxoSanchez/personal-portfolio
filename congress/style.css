@@ -1,3 +1,13 @@
+/* ----- Color Scheme ----- */
+/*
+#799FCB - Dark Pastel Blue
+#95B4CC - Wild Blue Yonder
+#AFC7D0 - Pastel Blue
+#EEF1E6 - Alabaster
+#FEC9C9 - Light Red
+#F9665E - Pastel Red
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +18,66 @@ html {
 }
     
 body {
-    background-color: #fffefc;
+    background-color: #EEF1E6;
 }
 
+/* ----- Anchors ----- */
+a {
+    text-decoration: none;
+    transition: .75s;
+}
+
+/* ----- Navigation Menu ----- */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #F9665E;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 0;
+}
+
+.nav-list a{
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: #EEF1E6;
+}
+
+.nav-list a:hover {
+    color: #F9665E;
+    background-color: #EEF1E6;
+}
+
+/* ----- Headings ----- */
+
 h1 {
-    padding-top: 2rem;
+    color: #F9665E;
+    padding-top: 7rem;
     padding-bottom: 2rem;
     text-align: center;
+}
+
+/* ----- Buttons ----- */
+div {
+    text-align: center;
+}
+
+#seniorityButton {
+    background-color: #FEC9C9;
+    padding: .5rem 10rem;
+    border-radius: 10px;
+}
+
+#seniorityButton:hover {
+    background-color: #AFC7D0;
+    color: white;
 }
 
 #congress-home {
@@ -26,20 +89,47 @@ h1 {
     background-color: #FF8178;
     transition: 1s;
 }
-
+/* ----- Main Content ----- */
 main {
     margin: 2rem;
 }
 
+/* ----- Senators ----- */
 .senatorGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.progressDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: .75rem;
+}
+
+/* ----- Images ----- */
+
+img {
+    border-radius: 5px;
+}
+
+figure {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
 figcaption {
     display: flex;
     justify-content: space-around;
+}
+
+/* Party Icons */
+i {
+    padding-left: .5rem;
 }
 
 .fa-republican {
@@ -54,28 +144,12 @@ figcaption {
     color: yellow;
 }
 
-.progressDiv {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-size: .75rem;
-}
-
-img {
-    border-radius: 5px;
-}
-
-figure {
-    text-align: center;
-    margin: 10px;
-    padding: 15px;
-}
-
+/* ----- Footer ----- */
 footer {
-    background-color: #FF8178;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #799FCB;
+    color: #EEF1E6;
 }
