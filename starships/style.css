@@ -1,18 +1,93 @@
+/* ----- Color Scheme ----- */
+/*
+#FFE81F - Banana Yellow
+#000000 - Black
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #C9C9C5;
+    background-color: black;
     font-family: 'Rubik', sans-serif;
-    color: black;
 }
 
+/* ----- Anchors ----- */
 a {
+    text-decoration: none;
+    color: #FFE81F;
+}
+
+a:hover {
+    transition: .75s;
+}
+
+a:active {
+    color: grey;
+}
+
+/* ----- Header ----- */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* ----- Navigation Menu ----- */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #FFE81F;
+    width: 100%;
+    list-style: none;
+    /* border-bottom: 1px solid #FFE81F; maybe come back to this later */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 0;
+}
+
+.nav-list a{
+    display: block;
+    padding: 2rem;
     text-decoration: none;
     color: black;
 }
 
+.nav-list a:hover {
+    color: #FFE81F;
+    background-color: black;
+}
+
+.nav {
+    /*border: solid 2px black;*/
+    padding: 1rem;
+}
+
+/* ----- Headings ----- */
+h1 {
+    text-align: center;
+    color: #FFE81F;
+    font-size: 2em;
+    margin: 5px 0px 20px 0px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* ----- Main Content ----- */
+main {
+    padding-top: 7rem;
+}
+
+/* ----- Buttons ----- */
 .home-button {
     height: 50px;
     margin-top: 15px;
@@ -24,25 +99,8 @@ a {
     transition: 2s;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-}
-
-a {
-    text-decoration: none;
-}
-
 li {
     list-style-type: none;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2em;
-    margin: 5px 0px 20px 0px;
-    background-color: grey;
-    font-weight: bold;
 }
 
 .container {
@@ -50,18 +108,18 @@ h1 {
     justify-content: space-between;
 }
 
-.nav {
-    /*border: solid 2px black;*/
-    padding: 1rem;
-}
-
+/* ----- Images ----- */
 main > img {
     height: 300px;
     border-radius: 10px;
 }
 
+/* ----- Footer ----- */
 footer {
-    background-color: grey;
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #FFE81F;
+    color: black;
 }

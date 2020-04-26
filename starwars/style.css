@@ -1,27 +1,88 @@
+/* ----- Color Scheme ----- */
+/*
+#FFE81F - Banana Yellow
+#000000 - Black
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #C9C9C5;
+    background-color: black;
     font-family: 'Rubik', sans-serif;
 }
 
+/* ----- Anchors ----- */
 a {
     text-decoration: none;
     color: black;
 }
 
-.home-button {
-    height: 50px;
-}
-
 a:hover {
-    transition: .5s;
+    transition: .75s;
 }
 
 a:active {
     color: grey;
+}
+
+/* ----- Navigation Menu ----- */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #FFE81F;
+    width: 100%;
+    list-style: none;
+    /* border-bottom: 1px solid #FFE81F; maybe come back to this later */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 0;
+}
+
+.nav-list a{
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list a:hover {
+    color: #FFE81F;
+    background-color: black;
+}
+
+/* ----- Main Content ----- */
+main {
+    padding-top: 7rem;
+}
+
+/* ----- Headings ----- */
+h1 {
+    color: #FFE81F;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*
+.home-button {
+    height: 50px;
+}
+*/
+
+/* ----- Paragraphs ----- */
+p {
+    color: #FFE81F;
+    padding-bottom: 1rem;
 }
 
 ul {
@@ -33,10 +94,7 @@ li {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
-
+/* ----- Buttons ----- */
 button {
     font-size: 1rem;
     border-radius: 10px;
@@ -65,6 +123,7 @@ button {
     text-align: center;
 }
 
+/* ----- Images ----- */
 a > img {
     height: 18rem;
     margin: 4px;
@@ -75,6 +134,17 @@ a > img {
     text-align: center;
 }
 
+/* ----- Footer ----- */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #FFE81F;
+    color: black;
+}
+
+footer p {
+    color: black;
+    padding: 0;
 }
