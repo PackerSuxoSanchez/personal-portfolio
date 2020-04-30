@@ -89,6 +89,7 @@ div {
     background-color: #FF8178;
     transition: 1s;
 }
+
 /* ----- Main Content ----- */
 main {
     margin: 2rem;
@@ -107,8 +108,25 @@ main {
     text-align: center;
 }
 
+div.senatorGrid div {
+    margin: .5rem;
+}
+
 progress {
     margin: auto;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: white;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(#F9665E, #EEF1E6, #799FCB);
 }
 
 label {

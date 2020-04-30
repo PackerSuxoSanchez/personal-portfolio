@@ -5,7 +5,6 @@ const senatorGrid = document.querySelector('.senatorGrid')
 const seniorityButton = document.querySelector('#seniorityButton')
 
 seniorityButton.addEventListener('click', () => {
-    
     birthdaySort()
 })
 
@@ -53,7 +52,7 @@ function progressBars(senator) {
     progressDiv.className = 'progressDiv'
     let loyaltyLabel = document.createElement('label')
     loyaltyLabel.for = 'loyalty'
-    loyaltyLabel.textContent = 'Loyalty'
+    loyaltyLabel.textContent = 'Party Loyalty'
     let loyaltyBar = document.createElement('progress')
     loyaltyBar.id = 'loyalty'
     loyaltyBar.max = 100
@@ -107,9 +106,10 @@ const mostLoyal = getSimplifiedSenators(republicans).reduce((acc, senator) => {
 // sort by value
 function senioritySort() {
     populateSenatorDiv(getSimplifiedSenators(senators).sort((a,b) => {
-        return parseInt(a.seniortiy) - parseInt(b.seniority)
+        return parseInt(a.seniority) - parseInt(b.seniority)
     })
-    )}
+    )
+}
 
 function birthdaySort() {
     populateSenatorDiv(getSimplifiedSenators(senators).sort((a, b) => {
