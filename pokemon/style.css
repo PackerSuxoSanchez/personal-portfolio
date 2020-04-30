@@ -62,12 +62,21 @@ nav#navbar ul li {
 	margin-bottom: 0;
 }
 
-/* ----- Headers ----- */
+/* ----- Headings ----- */
 
 h1 {
 	text-align: center;
 	margin-top: 7rem;
 	margin-bottom: 1rem;
+}
+
+h2 {
+	margin-top: 1rem;
+	text-decoration: underline;
+}
+
+h3 {
+	margin-top: 1rem;
 }
 
 /* ----- Buttons ----- */
@@ -164,14 +173,15 @@ h1 {
 	padding-top: 1rem;
  }
 
- ul{
-	margin-top: 2rem;
+ div ul{
+	margin-top: 1rem;
 	padding: 0;
 	list-style-type: none;
  }
 
- ul li {
+ div ul li {
 	margin-bottom: 1rem;
+	font-style: italic;
  }
 
  /* ----- Footer ----- */

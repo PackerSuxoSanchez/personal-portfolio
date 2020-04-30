@@ -12,9 +12,9 @@ async  function getAPIData(url) {
 
 // now, use the async getAPIData function
 function loadPage() {
-    getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=25').then((data) => {
+    getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=25').then(async(data) => {
         for (const pokemon of data.results) {
-            getAPIData(pokemon.url).then((pokeData) => {
+            await getAPIData(pokemon.url).then((pokeData) => {
                 populatePokeCard(pokeData)
             })
         }
@@ -76,12 +76,18 @@ function getImageFileName(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = 'card__face card__face--back'
+    let pokeAbout = document.createElement('h2');
+    pokeAbout.textContent = 'About Me!';
+    let pokeMyAbilities = document.createElement('h3')
+    pokeMyAbilities.textContent = 'My Abilities:'
     let abilityList = document.createElement('ul')
     pokemon.abilities.forEach(ability => {
         let abilityName = document.createElement('li')
         abilityName.textContent = ability.ability.name
         abilityList.appendChild(abilityName)
     })
+    cardBack.appendChild(pokeAbout)
+    cardBack.appendChild(pokeMyAbilities)
     cardBack.appendChild(abilityList)
     return cardBack
 }
