@@ -116,7 +116,6 @@ h1 {
 #contact {
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem;
     flex-wrap: wrap;
 }
 
@@ -128,6 +127,10 @@ h1 {
 #contact a:hover {
     color: #fff;
     background-color: #398CCC;
+}
+
+.fas {
+    font-weight: 400;
 }
 
 /* ----- Footer ----- */
