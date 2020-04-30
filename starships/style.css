@@ -110,13 +110,14 @@ li {
 
 .container {
     display: flex;
-    justify-content: space-between;
 }
 
 /* ----- Images ----- */
-main img {
+img {
     height: 300px;
     border-radius: 10px;
+    position: fixed;
+    margin-left: 15rem;
 }
 
 /* ----- Footer ----- */
