@@ -92,18 +92,6 @@ main {
     padding-top: 7rem;
 }
 
-/* ----- Buttons ----- */
-.home-button {
-    height: 50px;
-    margin-top: 15px;
-}
-
-.home-button:hover {
-    border-radius: 100%;
-    background-color: grey;
-    transition: 2s;
-}
-
 li {
     list-style-type: none;
 }

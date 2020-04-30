@@ -103,16 +103,36 @@ button {
     color: white;
 }
 
+button:hover {
+    color: black;
+}
+
+button:active {
+    font-weight: bold;
+}
+
 #maleButton {
     background-color: #51AEFE;
+}
+
+#maleButton:hover {
+    background: #FFE81F;
 }
 
 #femaleButton {
     background-color: #FF6BE8;
 }
 
+#femaleButton:hover {
+    background-color: #FFE81F;
+}
+
 #otherButton {
     background-color: grey;
+}
+
+#otherButton:hover {
+    background-color: #FFE81F;
 }
 
 #character-filter {
