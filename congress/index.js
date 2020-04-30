@@ -67,7 +67,7 @@ function progressBars(senator) {
     seniorityBar.value = parseInt((senator.seniority / mostSeniority.seniority) * 100)
     let votingLabel = document.createElement('label')
     votingLabel.for = 'voting'
-    votingLabel.textContent = 'Vote'
+    votingLabel.textContent = 'Missed Votes'
     let votingBar = document.createElement('progress')
     votingLabel.id = 'voting'
     votingBar.max = 100

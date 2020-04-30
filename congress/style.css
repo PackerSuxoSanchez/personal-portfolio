@@ -98,12 +98,17 @@ main {
 .senatorGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .progressDiv {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+progress {
+    margin: auto;
 }
 
 label {
